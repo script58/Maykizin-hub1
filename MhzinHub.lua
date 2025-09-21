@@ -9,7 +9,7 @@ Instruction: Execute this script and wait for an interface to appear on your gam
 ]]
 
 if IY_LOADED and not _G.IY_DEBUG == true then
-	error("Infinite Yield is already running!",0)
+	error("MhzinHub is already running!",0)
 	return
 end
 
@@ -17,7 +17,7 @@ pcall(function() getgenv().IY_LOADED = true end)
 
 if not game:IsLoaded() then
 	local notLoaded = Instance.new("Message", game:GetService("CoreGui"))
-	notLoaded.Text = 'Infinite Yield is waiting for the game to load'
+	notLoaded.Text = 'MhzinHub is waiting for the game to load'
 	game.Loaded:Wait()
 	notLoaded:Destroy()
 end
